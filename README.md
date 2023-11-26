@@ -1,15 +1,16 @@
-## Ülesanne 1: Lineaarotsing (Linear Search) 
-# 1. Rakendage Linear Search algoritm vabalt valitud programmeerimiskeeles. 
-Linear Searchi näide pythonis:
+# Ülesanne 1: Lineaarotsing (Linear Search) 
+1. Rakendage Linear Search algoritm vabalt valitud programmeerimiskeeles. 
 
+linear_search.algo3.py file
 
 2. Analüüsige oma algoritmi aja- ja ruumikomplekssust. 
 Ajakomplektssus: 
-Kuna linear search läbib kõik elemendid ükshaaval, kuni leitakse õige element siis halvimal juhul peab see läbima kogu massiivi ehk tema ajaline keerukus on seega O(n). Parimal juhul on selle ajaline keerukus O(1).
+Kuna linear search läbib kõik elemendid ükshaaval, kuni leitakse õige element siis halvimal juhul peab see läbima kogu massiivi ehk tema ajaline keerukus on seega O(n).
+Parimal juhul on selle ajaline keerukus O(1).
 Ruumikomplektssus: 
 Täiendavat ruumi ei ole vaja, kuna otsing toimub ainult ette antud massiivis, ehk ruumikomplektsus on O(1).
 
-3. Arutlege lühidal, kuidas Linear Search algoritmi saab kasutada 
+4. Arutlege lühidal, kuidas Linear Search algoritmi saab kasutada 
 reaalmaailma rakendustes ja millised on selle piirangud. 
 
 Hea kasutada: 
@@ -21,17 +22,18 @@ Raamatute leidmine riiulilt ehk otsib niikaua kuni leiab õige (kui see pole jus
 Kontaktide otsing, otsib konkreetset inimest kontaktiloendis.
 Mingi nime leidmine kuskilt andmestikust ehk sisestada otsitav väärtus ja linear search leiab selle väärtuse talle etteantud listist.
      
-      Piirangud:
+Piirangud:
 Ebaefektiivne suurte järjendite jaoks, sest võib olla aeglane, kontrollides iga elementi.
 Ei sobi sorteeritud järjenditele.
 Pole optimaalne suurte andmebaaside puhul, st. et lineaarsest otsingust võivad olla osad algoritmid kiiremad, nagu nt indekseerimine.
 Kui andmed on järjestatud, siis võiks kasutada selle asemel hoopis binary searchi, sest see võimaldab poolitamist ja kiiremat leidmist, kui linear search, kus igat elementi kontrollitakse ühekaupa.
 
 
-Ülesanne 2: Kahendotsingu (Binary Search) rakendamine ja analüüs 
+# Ülesanne 2: Kahendotsingu (Binary Search) rakendamine ja analüüs 
 1. Kirjutage programm, mis teostab Binary Search'i sorteeritud täisarvude massiivil. 
 Binary Searchi näide pythonis:
 
+binary_search.algo3.py file
 
 2. Võrrelge teoreetilises analüüsis valminud Binary Search'i ja Linear Search'i aegkomplekssust. 
 
@@ -54,14 +56,19 @@ Küll aga binary search kuluks selleks O(log2(1000)) = 10 sammu. Seega on
 binary search efektiivne suurte andmemahtudega töötamisel. Linear search 
 läbib selle elementide kaupa, Binary aga lõikab massiivi iga sammuga 
 pooleks, vähendades otsitava ala suurust.
-Ülesanne 3: Jump Search 
-1. Kirjutage lühike ülevaade Jump Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide. 
+
+# Ülesanne 3: Jump Search 
+1. Kirjutage lühike ülevaade Jump Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide.
+
+jump_search.algo3.py file
+
 Põhiprintsiibid: 
-Jump Search on mõeldud sorteeritud massiividele. Selle põhimõte on see, et algoritm hüppab kindlate sammude kaupa sorteeritud massiivis ja kontrollib, kas otsitav element on hüpete vahelisel alal. Töötab hüppamise teel fikseeritud arv sammude kaupa edasi, selle asemel, et kontrollida iga elementi. Pärast hüpet, kui element on suurem, viib läbi lineaarotsingu eelmises bloks, kui elementi pole leondis siis otsing lüppeb. 
-Jump Searchi näide pythonis:
+Jump Search on mõeldud sorteeritud massiividele. Selle põhimõte on see, et algoritm hüppab kindlate sammude kaupa sorteeritud massiivis ja kontrollib, kas otsitav element on hüpete vahelisel alal. 
+Töötab hüppamise teel fikseeritud arv sammude kaupa edasi, selle asemel, et kontrollida iga elementi. 
+Pärast hüpet, kui element on suurem, viib läbi lineaarotsingu eelmises bloks, kui elementi pole leondis siis otsing lüppeb. 
 
 
-2. Võrrelge Jump Search'i ajalist komplekssust Linear Searchi ja Binary Searchiga. 
+3. Võrrelge Jump Search'i ajalist komplekssust Linear Searchi ja Binary Searchiga. 
 
 Jump Searchi ajaline komplekssus on O(√n) või siis O(sqrt(n)). See tuleneb hüppamisest ja lineaarostingust. Jump Search on efektiivsem kui lineaarotsing aga vähem efektiivsem kui Binary search ja Ternary Search.
 
@@ -73,8 +80,11 @@ Kui massiivid on sorteeritud, kulub jump searchil õige elemendi leidmiseks väh
 
 
 
-Ülesanne 4: Kolmikotsing ja Kahendotsing (Ternary Search vs Binary Search) 
-1. Kirjutage lühike ülevaade Ternary Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide. 
+# Ülesanne 4: Kolmikotsing ja Kahendotsing (Ternary Search vs Binary Search) 
+1. Kirjutage lühike ülevaade Ternary Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide.
+
+Ternary_search.algo3.py file
+ 
 Ternary Search on sarnane Binary Searchile aga  jagab massiivi kolmeks osaks ja kontrollib, kas nõutav on ühes kolmest osast.
 Ternary Searchi näide pythonis:
 
@@ -93,7 +103,7 @@ hea kasutada Ternary Searchi kui element asub suurel alal või on teada,millises
 kolmandikus element asub.
 
 
-Ülesanne 5: Otsingualgoritmide praktiline rakendamine 
+# Ülesanne 5: Otsingualgoritmide praktiline rakendamine 
 Valige reaalmaailma probleem, kus otsingualgoritmi saab rakendada, ja kirjeldage konkreetse algoritmi sobivust stsenaariumi jaoks. Näited sellistest reaalmaailma probleemidest hõlmavad: 
 1. Konkreetse raamatu otsimine raamatukogu kataloogist. 
 2. Toote otsimine veebipoest. 
@@ -114,7 +124,7 @@ Uuendamise sagedus ei tohiks Raamatukogus olla väga tihe seega Binary search pe
 
 
 
-Boonusülesanne (2 punkti): 
+# Boonusülesanne (2 punkti): 
 Kirjeldage lühidalt Fibonacci Search algoritmi ja selgitage, kuidas seda saab kasutada suuremahuliste andmete sorteeritud massiivides. Töötage välja konkreetne stsenaarium, kus Fibonacci Search oleks efektiivsem kui teised otsingualgoritmid, näiteks Binary Search või Ternary Search. Selgitage, miks valitud stsenaariumis on Fibonacci Search parem valik, arvestades andmestruktuuri omadusi ja otsinguvajadusi.
 
 Fibonacci Search algoritm:
