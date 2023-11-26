@@ -1,5 +1,5 @@
 # Ülesanne 1: Lineaarotsing (Linear Search) 
-1. Rakendage Linear Search algoritm vabalt valitud programmeerimiskeeles. 
+ #1. Rakendage Linear Search algoritm vabalt valitud programmeerimiskeeles. 
 
 linear_search.algo3.py file
 
