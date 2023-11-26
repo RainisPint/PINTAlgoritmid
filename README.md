@@ -1,4 +1,7 @@
 # Ülesanne 1: Lineaarotsing (Linear Search) 
+
+NB! Neli koodifaili on olemas algo3 nimealt.
+
 # 1. Rakendage Linear Search algoritm vabalt valitud programmeerimiskeeles. 
 Pythoni näide:
 linear_search.algo3.py file
