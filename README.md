@@ -113,10 +113,11 @@ Valige reaalmaailma probleem, kus otsingualgoritmi saab rakendada, ja kirjeldage
 7. Konkreetse faili või kausta leidmine arvutis. 
 8. Sõna otsimine sõnaraamatust. 
 9. Kasutaja või konkreetse sisu otsimine sotsiaalmeedia platvormidel.
-10. 10. Konkreetse eseme otsimine ettevõtte süsteemis.
+10. Konkreetse eseme otsimine ettevõtte süsteemis.
    
 Pärast ühe nende stsenaariumide või mõne muu sarnase reaalmaailma probleemi valimist kirjeldage, milline otsingualgoritm oleks kõige tõhusam ja miks. Arutage ka potentsiaalseid modifikatsioone, mis võiksid algoritmi teie valitud rakenduse jaoks optimeerida. Pidage meeles, et tuleb arvestada andmete omadusi, nagu suurus, struktuur ja uuendamise sagedus.
 
+-------------------------------------------------------------------------------
 
 Reaalmaailma probleem: Konkreetse raamatu otsimine raamatukogu kataloogist
 
