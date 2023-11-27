@@ -105,7 +105,7 @@ Topelt räsimine oleks efektiivne tarkvaraarenduses või andmehalduses, kus näi
 # 1. Selgita, mis on räsitabeli koormustegur ja miks see on oluline.
 Määrab, millal räsitabelit suurendada ja mõjutab räsitabeli toimingute tõhusust. Tavaliselt peetakse heaks koormusteguriks 0.7, kui koormustegur muutub liiga suureks, siis suureneb kokkupõrgete tõenäosus.
 
-# 2. Rakenda lihtsat Rehashingu protsessi ja aruta, kuidas see aitab säilitada efektiivset räsitabelit.  ERROR
+# 2. Rakenda lihtsat Rehashingu protsessi ja aruta, kuidas see aitab säilitada efektiivset räsitabelit.  
 
 Määratakse, millal koormustegur ületab lävendi. Luuakse suurema suurusega uus räsitabel. Sisestatakse kõik võtmed vanast räsitabelist uude. 
 
