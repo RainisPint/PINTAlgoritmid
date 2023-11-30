@@ -1,5 +1,5 @@
 # Ülesanne 1: Räsimine 
-# 1. Kirjuta selg1itus räsimise (hashing) kontseptsioonist - põhiidee ja eesmärk. 
+# 1. Kirjuta selglitus räsimise (hashing) kontseptsioonist - põhiidee ja eesmärk. 
 Põhiidee: Räsimist kasutatakse kiirete andmeotsingute jaoks. Kindlale sisendile määratakse unikaalne räsiväärtus, mille järgi saab andmeid leida või lisada.
 
 Eesmärk: Kiire juurdepääs andmetele vähendades otsinguaega suurte andmekogumite puhul.
